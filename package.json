@@ -1,0 +1,91 @@
+{
+  "name": "@github-username/cdk-construct-gitpod-template",
+  "version": "0.0.0",
+  "description": "A CDK construct library",
+  "scripts": {
+    "build": "yarn test && yarn compile && yarn package",
+    "compile": "jsii --silence-warnings=reserved-word --no-fix-peer-dependencies && jsii-docgen",
+    "package": "jsii-pacmak",
+    "watch": "jsii -w --silence-warnings=reserved-word --no-fix-peer-dependencies",
+    "test": "rm -fr lib/ && jest --passWithNoTests --updateSnapshot",
+    "docgen": "jsii-docgen"
+  },
+  "author": {
+    "name": "Your Name",
+    "email": "your_email@email.com",
+    "organization": false
+  },
+  "repository": {
+    "url": "https://github.com/github-username/cdk-construct-gitpod-template.git"
+  },
+  "main": "lib/index.js",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "aws-cdk-lib": "2.3.0",
+    "constructs": "10.0.0",
+    "eslint": "^8.6.0",
+    "jest": "^26.4.2",
+    "jsii": "^1.50.0",
+    "jsii-pacmak": "^1.50.0",
+    "jsii-docgen": "^4.2.29",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.3.0",
+    "constructs": "^10.0.0"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": "^2.3.0",
+    "constructs": "^10.0.0"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.ts?(x)",
+      "<rootDir>/(test|src)/**/?(*.)+(spec|test).ts?(x)"
+    ],
+    "clearMocks": true,
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "clover",
+      "text"
+    ],
+    "coverageDirectory": "coverage",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "watchPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "reporters": [
+      "default"
+    ],
+    "preset": "ts-jest",
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.dev.json"
+      }
+    }
+  },
+  "types": "lib/index.d.ts",
+  "stability": "experimental",
+  "jsii": {
+    "outdir": "dist",
+    "targets": {},
+    "tsc": {
+      "outDir": "lib",
+      "rootDir": "src"
+    }
+  }
+}
