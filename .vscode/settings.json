@@ -1,0 +1,22 @@
+{
+    "workbench.colorTheme": "Gitpod Dark",
+    "[typescript]" : {
+        "editor.tabSize" : 2,
+        "editor.formatOnPaste" : true,
+        "editor.autoIndent" : "full",
+        "editor.formatOnSave" : false,
+        "editor.codeActionsOnSave" : {
+          "source.fixAll.eslint" : true
+        }
+    },
+    "eslint.format.enable" : true,
+    "[javascript]" : {
+        "editor.tabSize" : 2,
+        "editor.formatOnPaste" : true,
+        "editor.autoIndent" : "full",
+        "editor.formatOnSave" : false,
+        "editor.codeActionsOnSave" : {
+          "source.fixAll.eslint" : true
+        }
+    }
+}
