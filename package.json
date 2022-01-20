@@ -8,7 +8,8 @@
     "package": "jsii-pacmak",
     "watch": "jsii -w --silence-warnings=reserved-word --no-fix-peer-dependencies",
     "test": "rm -fr lib/ && jest --passWithNoTests --updateSnapshot",
-    "docgen": "jsii-docgen"
+    "docgen": "jsii-docgen",
+    "release": "rm -rf dist/* && yarn build && npx -p jsii-release@latest jsii-release-npm"
   },
   "author": {
     "name": "Your Name",
