@@ -23,3 +23,11 @@
 }
 
 ```
+### 開一個 split terminal 執行 `yarn watch`，將會檢查指定的檔案有被改變時，幫你做 Jsii Compiles.
+
+https://user-images.githubusercontent.com/46012524/150294010-f2f7a443-ec14-45d3-815e-f5ee95411325.mov
+
+
+
+
+
